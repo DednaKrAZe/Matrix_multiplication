@@ -20,15 +20,16 @@ for j in range (int(size2[0])):
 
 if (size1[1]!=size2[0]):
     print("Невозможно произвести действие")
-else:
-    for k in range (int(size1[0])):
-        line=''
-        for t in range (int(size2[1])):
-            res=0
-            for g in range (int(size1[1])):
-                res+=float(matrix1[k][g])*float(matrix2[g][t])
-            line+=str(res)
-            if t!=(int(size2[1])-1):
-                line+=' '
-        print(line)
+    exit(0)
+
+for k in range (int(size1[0])):
+    line=''
+    for t in range (int(size2[1])):
+        res=0
+        for g in range (int(size1[1])):
+            res+=float(matrix1[k][g])*float(matrix2[g][t])
+        line+=str(res)
+        if t!=(int(size2[1])-1):
+            line+=' '
+    print(line)
             
